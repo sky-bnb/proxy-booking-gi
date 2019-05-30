@@ -3,17 +3,39 @@
   <head>
     <title>Skybnb</title>
   </head>
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <link href=“https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap” rel=“stylesheet”>
   <body>
-    <div id="general"></div>
+    
+    <div id="photo"></div>
+    <div style="margin: 0 auto;"></div>
+      <div style="display: flex; max-width: 1080px; margin: 0 auto;">
+        <div style="padding: 24px 24px;">
+          <div id="general"></div>
+          <div style="overflow: hidden;">
+            <div id="calendar"></div>
+          </div>
+          <div id="reviews"></div>
+          <div id="neighborhood"></div>
+        </div>
+        <div id="booking" style="padding: 24px 0px 0px 0px;"></div>
+      </div>
+      <div style="display: flex; flex-direction: column; justify-content: center;">
+        <img src="https://s3-us-west-1.amazonaws.com/sky-bnb/similar.png" style="object-fit: none;" />
+        <img src="https://s3-us-west-1.amazonaws.com/sky-bnb/things-todo.png" style="object-fit: none;" />
+        <img src="https://s3-us-west-1.amazonaws.com/sky-bnb/explore.png" style="object-fit: none;" />
+      </div>
+    </div>
+    
+   
+    <script src="http://127.0.0.1:3001/bundle.js"></script>
+    <script src="http://127.0.0.1:3002/bundle.js"></script>
+    <script src="http://127.0.0.1:3003/bundle.js"></script>
+    <script src="http://127.0.0.1:3004/bundle.js"></script>
+    <script src="http://127.0.0.1:3005/bundle.js"></script>
+    <script src="http://127.0.0.1:3006/bundle.js"></script>
   </body>
-  <!-- <script src="127.0.0.1:3001"></script>
-  <script src="127.0.0.1:3002"></script>
-  <script src="127.0.0.1:3003"></script>
-  <script src="127.0.0.1:3004"></script> -->
-  <script src="../index.js"></script>
-  <script>
-    ReactDOM.render((<div>RENDERED</div>), document.getElementById('general'));
-  </script>
 </html>
